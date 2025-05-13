@@ -1,0 +1,1167 @@
+{
+  "free_courses": [
+    {
+      "id": "21",
+      "title": "Lập trình C++ cơ bản, nâng cao",
+      "slug": "lap-trinh-c-co-ban-toi-nang-cao",
+      "description": "Khóa học lập trình C++ từ cơ bản tới nâng cao dành cho người mới bắt đầu.",
+      "image_url": "https://files.fullstack.edu.vn/f8-prod/courses/21/63e1bcbaed1dd.png",
+      "content": [
+        {
+          "module_id": 1,
+          "module_title": "C++ cơ bản",
+          "lessons": [
+            {
+              "lesson_id": 1,
+              "title": "Giới thiệu ngôn ngữ C++",
+              "duration": "10 phút",
+              "description": "C++ là ngôn ngữ lập trình hướng đối tượng được phát triển từ ngôn ngữ C. Nó cung cấp nhiều tính năng mạnh mẽ như kế thừa, đa hình, nạp chồng toán tử và xử lý ngoại lệ. \n C ++ được phát triển bởi Bjarne Stroustrup tại Bell Labs, nó có thể hiểu như một phần mở rộng của C, bắt đầu từ năm 1979. C ++ bổ sung nhiều tính năng mới cho ngôn ngữ C, và có lẽ nó được coi là thay thế cho C. \n Thực chất thì C ++ nổi tiếng và được dùng nhiều là vì nó là một ngôn ngữ hướng đối tượng. Về phần đối tượng là gì và nó khác với các phương pháp lập trình truyền thống như thế nào, chúng tôi sẽ trình bày về điều đó trong chương sau trong serise tự học C++ này. (Lập trình hướng đối tượng cơ bản).Và đến năm 1998 thì C ++ đã được tiêu chuẩn hóa bởi ủy ban ISO (điều này có nghĩa là ủy ban ISO đã phê chuẩn tài liệu mô tả của ngôn ngữ C ++, để giúp đảm bảo tất cả các compilers tuân thủ cùng một bộ tiêu chuẩn). Một bản cập nhật này đã được phát hành vào năm 2003 (được gọi là C ++ 03). \nHọc C++ làm được gì? \n C ++ khá vượt trội trong các chương trình cần hiệu suất cao và kiểm soát chính xác bộ nhớ và các tài nguyên khác. Dưới đây là một số ứng dụng phổ biến rất có thể sẽ được viết bằng C ++: \nVideo games \nVideo games \nCác ứng dụng tài chính hiệu suất cao (ví dụ: Các giao dịch tần suất cao) \nỨng dụng đồ họa và mô phỏng \nỨng dụng văn phòng \nPhần mềm nhúng \nXử lý âm thanh và video",
+              "exercises": [
+                {
+                  "exercise_id": 1,
+                  "title": "Câu hỏi về C++",
+                  "question": "C++ là ngôn ngữ lập trình được phát triển từ ngôn ngữ nào?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "Python"
+                    },
+                    {
+                      "id": "2",
+                      "text": "C"
+                    },
+                    {
+                      "id": "3",
+                      "text": "Java"
+                    },
+                    {
+                      "id": "4",
+                      "text": "Ruby"
+                    }
+                  ],
+                  "correct_answer": "2"
+                },
+                {
+                  "exercise_id": 2,
+                  "title": "Câu hỏi về C++",
+                  "question": "C++ là ngôn ngữ lập trình hướng đối tượng. Điều này có nghĩa là gì?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "Ngôn ngữ dùng cho lập trình web"
+                    },
+                    {
+                      "id": "2",
+                      "text": "Ngôn ngữ hỗ trợ đa hình và kế thừa"
+                    },
+                    {
+                      "id": "3",
+                      "text": "Ngôn ngữ không có tính kế thừa"
+                    },
+                    {
+                      "id": "4",
+                      "text": "Ngôn ngữ chỉ xử lý số liệu"
+                    }
+                  ],
+                  "correct_answer": "2"
+                },
+                {
+                  "exercise_id": 3,
+                  "title": "Câu hỏi về C++",
+                  "question": "Các tính năng mạnh mẽ của C++ bao gồm điều gì?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "Chỉ hỗ trợ cấu trúc dữ liệu cơ bản"
+                    },
+                    {
+                      "id": "2",
+                      "text": "Kế thừa, đa hình, nạp chồng toán tử"
+                    },
+                    {
+                      "id": "3",
+                      "text": "Chỉ sử dụng cho phần mềm doanh nghiệp"
+                    },
+                    {
+                      "id": "4",
+                      "text": "Không hỗ trợ xử lý ngoại lệ"
+                    }
+                  ],
+                  "correct_answer": "2"
+                }
+              ]
+            },
+            {
+              "lesson_id": 2,
+              "title": "Cấu trúc một chương trình C++",
+              "duration": "15 phút",
+              "description": "\nHọc cách viết chương trình C++ cơ bản, bao gồm cú pháp và cách tổ chức một chương trình đơn giản.\n\nChương trình C++ đơn giản:\n\n#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"in ra man hinh\";\n    cin.get();\n    return 0;\n} \nGiới thiệu về hàm main(): \nMỗi chương trình C++ đều bắt đầu từ hàm main(), nơi chương trình thực thi. \nCú pháp cơ bản: \nCách viết chương trình cơ bản với cú pháp đúng: #include <iostream>, using namespace std;, và khai báo hàm main() \n In ra màn hình với cout: Sử dụng cout để in ra các thông tin trên màn hình. \nVí dụ: cout << \"in ra man hinh\"; ",
+              "exercises": [
+                {
+                  "exercise_id": 4,
+                  "title": "Câu hỏi về chương trình C++",
+                  "question": "Phần nào trong chương trình C++ là bắt buộc?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "#include <iostream>"
+                    },
+                    {
+                      "id": "2",
+                      "text": "print('Hello World')"
+                    },
+                    {
+                      "id": "3",
+                      "text": "public class Main"
+                    },
+                    {
+                      "id": "4",
+                      "text": "def main()"
+                    }
+                  ],
+                  "correct_answer": "1"
+                },
+                {
+                  "exercise_id": 5,
+                  "title": "Câu hỏi về chương trình C++",
+                  "question": "Chương trình C++ đầu tiên thường bao gồm những phần nào?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "#include <iostream> và hàm main()"
+                    },
+                    {
+                      "id": "2",
+                      "text": "Các hàm không cần khai báo"
+                    },
+                    {
+                      "id": "3",
+                      "text": "Chỉ có một dòng lệnh print"
+                    },
+                    {
+                      "id": "4",
+                      "text": "Chỉ có các cấu trúc điều kiện"
+                    }
+                  ],
+                  "correct_answer": "1"
+                },
+                {
+                  "exercise_id": 6,
+                  "title": "Viết chương trình C++",
+                  "question": "Viết một chương trình C++ in ra dòng chữ 'Hello, world!'",
+                  "type": "code",
+                  "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}",
+                  "expected_output": "Hello, world!\n"
+                }
+              ]
+            },
+            {
+              "lesson_id": 3,
+              "title": "Biến và kiểu dữ liệu",
+              "duration": "20 phút",
+              "description": "Các kiểu dữ liệu cơ bản: \n int: Kiểu số nguyên. \n float: Kiểu số thực có dấu chấm động. \nchar: Kiểu ký tự. \n bool: Kiểu giá trị đúng/sai. \n Khai báo và sử dụng biến: \nKhai báo biến trong C++: int a = 5;, float b = 3.14; \nQuy tắc đặt tên biến, phạm vi và phạm vi của biến. \nCác phép toán cơ bản:\n Các phép toán số học (+, -, *, /), so sánh (==, !=, <, >), logic (&&, ||).",
+              "exercises": [
+                {
+                  "exercise_id": 6,
+                  "title": "Câu hỏi về kiến thức cơ bản",
+                  "question": "Kiểu dữ liệu nào sau đây không có trong C++?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "int"
+                    },
+                    {
+                      "id": "2",
+                      "text": "float"
+                    },
+                    {
+                      "id": "3",
+                      "text": "string"
+                    },
+                    {
+                      "id": "4",
+                      "text": "arraylist"
+                    }
+                  ],
+                  "correct_answer": "4"
+                },
+                {
+                  "exercise_id": 7,
+                  "title": "Câu hỏi về kiến thức cơ bản",
+                  "question": "Cú pháp khai báo biến trong C++ như thế nào?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "var x;"
+                    },
+                    {
+                      "id": "2",
+                      "text": "x : int"
+                    },
+                    {
+                      "id": "3",
+                      "text": "int x;"
+                    },
+                    {
+                      "id": "4",
+                      "text": "x = int;"
+                    }
+                  ],
+                  "correct_answer": "3"
+                },
+                {
+                  "exercise_id": 100,
+                  "title": "Khai báo và in giá trị biến",
+                  "question": "Viết chương trình C++ khai báo một biến kiểu int tên là a có giá trị là 10 và in ra giá trị của a.",
+                  "type": "code",
+                  "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}",
+                  "expected_output": "10\n"
+                }
+              ]
+            },
+            {
+              "lesson_id": 4,
+              "title": "Câu lệnh điều kiện (if-else, switch)",
+              "duration": "15 phút",
+              "description": "Câu lệnh if, else: \nCâu lệnh điều kiện cơ bản trong C++:\n if (a > b) { \n cout << \"a is greater than b\"; \n } else { \n  cout << \"a is less than or equal to b\"; \n } \nCâu lệnh switch:\n Cấu trúc switch giúp kiểm tra nhiều điều kiện khác nhau.\n switch (x) {\n  case 1: cout << \"One\"; break; \ncase 2: cout << \"Two\"; break; \ndefault: \ncout << \"Unknown\"; break;",
+              "exercises": [
+                {
+                  "exercise_id": 8,
+                  "title": "Câu hỏi về if-else",
+                  "question": "Câu lệnh nào dưới đây sẽ kiểm tra xem một số nguyên có phải là số dương hay không?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "if (x > 0) { // làm gì đó }"
+                    },
+                    {
+                      "id": "2",
+                      "text": "if (x == 0) { // làm gì đó }"
+                    },
+                    {
+                      "id": "3",
+                      "text": "if (x < 0) { // làm gì đó }"
+                    },
+                    {
+                      "id": "4",
+                      "text": "if (x != 0) { // làm gì đó }"
+                    }
+                  ],
+                  "correct_answer": "1"
+                },
+                {
+                  "exercise_id": 9,
+                  "title": "Câu hỏi về if-else",
+                  "question": "Câu lệnh nào sẽ kiểm tra xem một số nguyên x có phải là số âm không?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "if (x < 0) { // làm gì đó }"
+                    },
+                    {
+                      "id": "2",
+                      "text": "if (x == 0) { // làm gì đó }"
+                    },
+                    {
+                      "id": "3",
+                      "text": "if (x > 0) { // làm gì đó }"
+                    },
+                    {
+                      "id": "4",
+                      "text": "if (x != 0) { // làm gì đó }"
+                    }
+                  ],
+                  "correct_answer": "1"
+                },
+                {
+                  "exercise_id": 10,
+                  "title": "Câu hỏi về switch",
+                  "question": "Câu lệnh switch trong C++ thường được sử dụng để kiểm tra điều kiện nào?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "Kiểm tra một biểu thức số học"
+                    },
+                    {
+                      "id": "2",
+                      "text": "Kiểm tra một biểu thức boolean"
+                    },
+                    {
+                      "id": "3",
+                      "text": "Kiểm tra một giá trị duy nhất so với nhiều lựa chọn khác nhau"
+                    },
+                    {
+                      "id": "4",
+                      "text": "Kiểm tra một điều kiện logic"
+                    }
+                  ],
+                  "correct_answer": "3"
+                },
+                {
+                  "exercise_id": 11,
+                  "title": "Câu hỏi về switch",
+                  "question": "Dưới đây là đoạn mã C++ sử dụng câu lệnh switch, điều kiện nào sẽ được kiểm tra?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "switch (x) { case 1: // làm gì đó; break; }"
+                    },
+                    {
+                      "id": "2",
+                      "text": "switch (x > 0) { case true: // làm gì đó; break; }"
+                    },
+                    {
+                      "id": "3",
+                      "text": "switch (x == 0) { case false: // làm gì đó; break; }"
+                    },
+                    {
+                      "id": "4",
+                      "text": "switch (x) { case 'a': // làm gì đó; break; }"
+                    }
+                  ],
+                  "correct_answer": "1"
+                },
+                {
+                  "exercise_id": 3,
+                  "title": "Tìm số lớn nhất trong hai số",
+                  "question": "Viết chương trình C++ đọc vào hai số nguyên `a` và `b`, sau đó in ra:\n- “a is greater” nếu `a > b`\n- “b is greater” nếu `b > a`\n- “equal” nếu `a == b`",
+                  "type": "code",
+                  "starter_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a, b;\n    cin >> a >> b;\n    // TODO: Sử dụng if-else để so sánh và in kết quả\n    \n    return 0;\n}",
+                  "expected_output": ""
+                }
+              ]
+            },
+            {
+              "lesson_id": 5,
+              "title": "Vòng lặp (Loops)",
+              "duration": "20 phút",
+              "description": "Vòng lặp for:\n Dùng để lặp qua các phần tử trong mảng hoặc thực hiện hành động lặp đi lặp lại.\n for (int i = 0; i < 5; i++) { \n cout << i << \" \"; \n} \n Vòng lặp while: \nVòng lặp kiểm tra điều kiện trước khi thực hiện hành động. \n while (i < 5) { \n cout << i << \" \"; \n i++; \n} \nVòng lặp do-while: \nVòng lặp kiểm tra điều kiện sau khi thực hiện hành động. \n do { \n cout << i << \" \"; \n i++; \n} while (i < 5);",
+              "exercises": [
+                {
+                  "exercise_id": 12,
+                  "title": "Câu hỏi về vòng lặp for",
+                  "question": "Câu lệnh nào dưới đây sẽ in ra các số từ 1 đến 5 trong vòng lặp for?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "for (int i = 1; i <= 5; i++) { cout << i; }"
+                    },
+                    {
+                      "id": "2",
+                      "text": "for (int i = 1; i < 5; i++) { cout << i; }"
+                    },
+                    {
+                      "id": "3",
+                      "text": "for (int i = 0; i <= 5; i++) { cout << i; }"
+                    },
+                    {
+                      "id": "4",
+                      "text": "for (int i = 5; i > 0; i--) { cout << i; }"
+                    }
+                  ],
+                  "correct_answer": "1"
+                },
+                {
+                  "exercise_id": 13,
+                  "title": "Câu hỏi về vòng lặp while",
+                  "question": "Câu lệnh nào dưới đây sẽ in ra các số từ 1 đến 5 trong vòng lặp while?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "int i = 1; while (i <= 5) { cout << i; i++; }"
+                    },
+                    {
+                      "id": "2",
+                      "text": "int i = 1; while (i < 5) { cout << i; i++; }"
+                    },
+                    {
+                      "id": "3",
+                      "text": "int i = 0; while (i <= 5) { cout << i; i++; }"
+                    },
+                    {
+                      "id": "4",
+                      "text": "int i = 5; while (i > 0) { cout << i; i--; }"
+                    }
+                  ],
+                  "correct_answer": "1"
+                },
+                {
+                  "exercise_id": 14,
+                  "title": "Câu hỏi về vòng lặp do-while",
+                  "question": "Câu lệnh nào dưới đây sẽ in ra các số từ 1 đến 5 trong vòng lặp do-while?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "int i = 1; do { cout << i; i++; } while (i <= 5);"
+                    },
+                    {
+                      "id": "2",
+                      "text": "int i = 1; do { cout << i; i--; } while (i <= 5);"
+                    },
+                    {
+                      "id": "3",
+                      "text": "int i = 0; do { cout << i; i++; } while (i < 5);"
+                    },
+                    {
+                      "id": "4",
+                      "text": "int i = 5; do { cout << i; i--; } while (i > 0);"
+                    }
+                  ],
+                  "correct_answer": "1"
+                },
+                {
+                  "exercise_id": 15,
+                  "title": "Câu hỏi về vòng lặp for",
+                  "question": "Câu lệnh nào dưới đây sẽ in ra các số chẵn từ 2 đến 10 trong vòng lặp for?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "for (int i = 2; i <= 10; i++) { if (i % 2 == 0) cout << i; }"
+                    },
+                    {
+                      "id": "2",
+                      "text": "for (int i = 1; i <= 10; i++) { if (i % 2 != 0) cout << i; }"
+                    },
+                    {
+                      "id": "3",
+                      "text": "for (int i = 2; i <= 10; i+=2) { cout << i; }"
+                    },
+                    {
+                      "id": "4",
+                      "text": "for (int i = 1; i <= 10; i+=2) { cout << i; }"
+                    }
+                  ],
+                  "correct_answer": "3"
+                }
+              ]
+            },
+            {
+              "lesson_id": 6,
+              "title": "Hàm trong C++",
+              "duration": "15 phút",
+              "description": "Định nghĩa và gọi hàm: \n Hàm trong C++ là một khối mã được đóng gói, có thể được gọi lại nhiều lần. \n int add(int a, int b) { \n return a + b;\n} \nHàm có tham số và giá trị trả về: \nHàm có thể nhận tham số và trả về giá trị. \nVí dụ: Hàm tính tổng hai số. \n Hàm đệ quy (Recursion):\nHàm đệ quy gọi chính nó để giải quyết các bài toán lặp lại. \nVí dụ tính giai thừa: \n int factorial(int n) {\nif (n <= 1) return 1;\nreturn n * factorial(n - 1);\n}",
+              "exercises": [
+                {
+                  "exercise_id": 16,
+                  "title": "Câu hỏi về hàm trong C++",
+                  "question": "Hàm nào dưới đây sẽ tính tổng hai số a và b trong C++?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "int add(int a, int b) { return a - b; }"
+                    },
+                    {
+                      "id": "2",
+                      "text": "int add(int a, int b) { return a * b; }"
+                    },
+                    {
+                      "id": "3",
+                      "text": "int add(int a, int b) { return a + b; }"
+                    },
+                    {
+                      "id": "4",
+                      "text": "int add(int a, int b) { return a / b; }"
+                    }
+                  ],
+                  "correct_answer": "3"
+                },
+                {
+                  "exercise_id": 17,
+                  "title": "Câu hỏi về hàm đệ quy trong C++",
+                  "question": "Hàm nào dưới đây là hàm đệ quy tính giai thừa của một số n?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "int factorial(int n) { return n * factorial(n - 1); }"
+                    },
+                    {
+                      "id": "2",
+                      "text": "int factorial(int n) { if (n == 0) return 1; return n * factorial(n - 1); }"
+                    },
+                    {
+                      "id": "3",
+                      "text": "int factorial(int n) { return n * (n - 1); }"
+                    },
+                    {
+                      "id": "4",
+                      "text": "int factorial(int n) { return n + factorial(n - 1); }"
+                    }
+                  ],
+                  "correct_answer": "2"
+                }
+              ]
+            },
+            {
+              "lesson_id": 7,
+              "title": "Hàm trong C++",
+              "duration": "15 phút",
+              "description": "Định nghĩa và gọi hàm: \n Hàm trong C++ là một khối mã được đóng gói, có thể được gọi lại nhiều lần. \n int add(int a, int b) { \n return a + b;\n} \nHàm có tham số và giá trị trả về: \nHàm có thể nhận tham số và trả về giá trị. \nVí dụ: Hàm tính tổng hai số. \n Hàm đệ quy (Recursion):\nHàm đệ quy gọi chính nó để giải quyết các bài toán lặp lại. \nVí dụ tính giai thừa: \n int factorial(int n) {\nif (n <= 1) return 1;\nreturn n * factorial(n - 1);\n}",
+              "exercises": [
+                {
+                  "exercise_id": 16,
+                  "title": "Câu hỏi về hàm trong C++",
+                  "question": "Hàm nào dưới đây sẽ tính tổng hai số a và b trong C++?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "int add(int a, int b) { return a - b; }"
+                    },
+                    {
+                      "id": "2",
+                      "text": "int add(int a, int b) { return a * b; }"
+                    },
+                    {
+                      "id": "3",
+                      "text": "int add(int a, int b) { return a + b; }"
+                    },
+                    {
+                      "id": "4",
+                      "text": "int add(int a, int b) { return a / b; }"
+                    }
+                  ],
+                  "correct_answer": "3"
+                },
+                {
+                  "exercise_id": 17,
+                  "title": "Câu hỏi về hàm đệ quy trong C++",
+                  "question": "Hàm nào dưới đây là hàm đệ quy tính giai thừa của một số n?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "int factorial(int n) { return n * factorial(n - 1); }"
+                    },
+                    {
+                      "id": "2",
+                      "text": "int factorial(int n) { if (n == 0) return 1; return n * factorial(n - 1); }"
+                    },
+                    {
+                      "id": "3",
+                      "text": "int factorial(int n) { return n * (n - 1); }"
+                    },
+                    {
+                      "id": "4",
+                      "text": "int factorial(int n) { return n + factorial(n - 1); }"
+                    }
+                  ],
+                  "correct_answer": "2"
+                }
+              ]
+            },
+            {
+              "lesson_id": 8,
+              "title": "Hàm trong C++",
+              "duration": "15 phút",
+              "description": "Định nghĩa và gọi hàm: \n Hàm trong C++ là một khối mã được đóng gói, có thể được gọi lại nhiều lần. \n int add(int a, int b) { \n return a + b;\n} \nHàm có tham số và giá trị trả về: \nHàm có thể nhận tham số và trả về giá trị. \nVí dụ: Hàm tính tổng hai số. \n Hàm đệ quy (Recursion):\nHàm đệ quy gọi chính nó để giải quyết các bài toán lặp lại. \nVí dụ tính giai thừa: \n int factorial(int n) {\nif (n <= 1) return 1;\nreturn n * factorial(n - 1);\n}",
+              "exercises": [
+                {
+                  "exercise_id": 16,
+                  "title": "Câu hỏi về hàm trong C++",
+                  "question": "Hàm nào dưới đây sẽ tính tổng hai số a và b trong C++?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "int add(int a, int b) { return a - b; }"
+                    },
+                    {
+                      "id": "2",
+                      "text": "int add(int a, int b) { return a * b; }"
+                    },
+                    {
+                      "id": "3",
+                      "text": "int add(int a, int b) { return a + b; }"
+                    },
+                    {
+                      "id": "4",
+                      "text": "int add(int a, int b) { return a / b; }"
+                    }
+                  ],
+                  "correct_answer": "3"
+                },
+                {
+                  "exercise_id": 17,
+                  "title": "Câu hỏi về hàm đệ quy trong C++",
+                  "question": "Hàm nào dưới đây là hàm đệ quy tính giai thừa của một số n?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "int factorial(int n) { return n * factorial(n - 1); }"
+                    },
+                    {
+                      "id": "2",
+                      "text": "int factorial(int n) { if (n == 0) return 1; return n * factorial(n - 1); }"
+                    },
+                    {
+                      "id": "3",
+                      "text": "int factorial(int n) { return n * (n - 1); }"
+                    },
+                    {
+                      "id": "4",
+                      "text": "int factorial(int n) { return n + factorial(n - 1); }"
+                    }
+                  ],
+                  "correct_answer": "2"
+                }
+              ]
+            },
+            {
+              "lesson_id": 9,
+              "title": "Mảng và chuỗi (Arrays and Strings)",
+              "duration": "15 phút",
+              "description": "Khai báo và sử dụng mảng: \nMảng là một tập hợp các phần tử cùng loại. \nVí dụ:\nint arr[5] = {1, 2, 3, 4, 5}; \nCác phép toán trên mảng: \n Lặp qua mảng bằng vòng lặp for để truy xuất và thay đổi giá trị.\n Chuỗi trong C++:\n Sử dụng string trong C++ để làm việc với chuỗi ký tự.\n Ví dụ: string name = \"C++ Programming\";   ",
+              "exercises": [
+                {
+                  "exercise_id": 18,
+                  "title": "Câu hỏi về Mảng trong C++",
+                  "question": "Câu lệnh nào dưới đây sẽ tính tổng của tất cả các phần tử trong mảng arr[]?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "int sum = 0; for (int i = 0; i < arr.length(); i++) sum += arr[i];"
+                    },
+                    {
+                      "id": "2",
+                      "text": "int sum = 0; for (int i = 0; i < sizeof(arr)/sizeof(arr[0]); i++) sum += arr[i];"
+                    },
+                    {
+                      "id": "3",
+                      "text": "int sum = 0; for (int i = 0; i < arr.size(); i++) sum += arr[i];"
+                    },
+                    {
+                      "id": "4",
+                      "text": "int sum = 0; for (int i = 0; i < arr.length; i++) sum += arr[i];"
+                    }
+                  ],
+                  "correct_answer": "2"
+                },
+                {
+                  "exercise_id": 19,
+                  "title": "Câu hỏi về Chuỗi trong C++",
+                  "question": "Câu lệnh nào dưới đây sẽ đảo ngược một chuỗi trong C++?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "reverse(str.begin(), str.end());"
+                    },
+                    {
+                      "id": "2",
+                      "text": "str.reverse(); return str;"
+                    },
+                    {
+                      "id": "3",
+                      "text": "for (int i = str.size() - 1; i >= 0; i--) cout << str[i];"
+                    },
+                    {
+                      "id": "4",
+                      "text": "str = reverse(str); return str;"
+                    }
+                  ],
+                  "correct_answer": "1"
+                },
+                {
+                  "exercise_id": 20,
+                  "title": "Câu hỏi về Mảng đa chiều trong C++",
+                  "question": "Câu lệnh nào dưới đây sẽ in ra phần tử ở hàng 2, cột 3 của mảng hai chiều arr[3][3]?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "cout << arr[2][3];"
+                    },
+                    {
+                      "id": "2",
+                      "text": "cout << arr[1][2];"
+                    },
+                    {
+                      "id": "3",
+                      "text": "cout << arr[3][2];"
+                    },
+                    {
+                      "id": "4",
+                      "text": "cout << arr[3][3];"
+                    }
+                  ],
+                  "correct_answer": "2"
+                }
+              ]
+            },
+            {
+              "lesson_id": 10,
+              "title": "Con trỏ (Pointers)",
+              "duration": "15 phút",
+              "description": "Con trỏ là gì?: \nCon trỏ là một biến lưu trữ địa chỉ của một biến khác. \nCách sử dụng con trỏ trong C++: \nKhai báo con trỏ và sử dụng toán tử * để truy xuất giá trị.\nVí dụ:\n int a = 10;\nint *ptr = &a;\ncout << *ptr; // Output: 10 \nCon trỏ với mảng: \nMảng có thể được truy cập thông qua con trỏ.",
+              "exercises": [
+                {
+                  "exercise_id": 21,
+                  "title": "Câu hỏi về Con trỏ trong C++",
+                  "question": "Câu lệnh nào dưới đây là cách khai báo một con trỏ trỏ đến một số nguyên trong C++?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "int* ptr;"
+                    },
+                    {
+                      "id": "2",
+                      "text": "int ptr;"
+                    },
+                    {
+                      "id": "3",
+                      "text": "ptr* int;"
+                    },
+                    {
+                      "id": "4",
+                      "text": "pointer int;"
+                    }
+                  ],
+                  "correct_answer": "1"
+                },
+                {
+                  "exercise_id": 22,
+                  "title": "Câu hỏi về Con trỏ và Mảng trong C++",
+                  "question": "Câu lệnh nào dưới đây sẽ in ra giá trị của phần tử thứ 3 trong mảng arr[] bằng cách sử dụng con trỏ?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "cout << *(arr + 3);"
+                    },
+                    {
+                      "id": "2",
+                      "text": "cout << arr[3];"
+                    },
+                    {
+                      "id": "3",
+                      "text": "cout << *(arr[3]);"
+                    },
+                    {
+                      "id": "4",
+                      "text": "cout << *arr[3];"
+                    }
+                  ],
+                  "correct_answer": "1"
+                },
+                {
+                  "exercise_id": 23,
+                  "title": "Câu hỏi về Con trỏ và Hàm trong C++",
+                  "question": "Câu lệnh nào dưới đây sẽ truyền một con trỏ tới hàm để thay đổi giá trị của biến ngoài hàm?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "void changeValue(int* ptr) { *ptr = 10; }"
+                    },
+                    {
+                      "id": "2",
+                      "text": "void changeValue(int ptr) { ptr = 10; }"
+                    },
+                    {
+                      "id": "3",
+                      "text": "void changeValue(int& ptr) { ptr = 10; }"
+                    },
+                    {
+                      "id": "4",
+                      "text": "void changeValue(int* ptr) { ptr = 10; }"
+                    }
+                  ],
+                  "correct_answer": "1"
+                }
+              ]
+            },
+            {
+              "lesson_id": 11,
+              "title": "Lớp và đối tượng (Classes and Objects)",
+              "duration": "15 phút",
+              "description": "Khái niệm lớp và đối tượng: \nLớp là một bản thiết kế cho đối tượng. Đối tượng là một thực thể của lớp. \nTạo và sử dụng lớp:\nCấu trúc lớp với thuộc tính và phương thức. \nVí dụ: \n class Car {\npublic: \nstring model; \nvoid start() { \ncout << \"Car started\";\n} \n}; \nKế thừa (Inheritance) cơ bản: \nKế thừa cho phép lớp con kế thừa các thuộc tính và phương thức từ lớp cha.",
+              "exercises": [
+                {
+                  "exercise_id": 24,
+                  "title": "Câu hỏi về Khai báo Lớp trong C++",
+                  "question": "Câu lệnh nào dưới đây là cách khai báo một lớp có tên là Person trong C++?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "class Person { public: int age; string name; }; "
+                    },
+                    {
+                      "id": "2",
+                      "text": "class Person { int age; string name; }; "
+                    },
+                    {
+                      "id": "3",
+                      "text": "class Person { public int age; string name; }; "
+                    },
+                    {
+                      "id": "4",
+                      "text": "class Person { public: age int; name string; }; "
+                    }
+                  ],
+                  "correct_answer": "1"
+                },
+                {
+                  "exercise_id": 25,
+                  "title": "Câu hỏi về Đối tượng trong C++",
+                  "question": "Câu lệnh nào dưới đây sẽ tạo một đối tượng có tên là p của lớp Person trong C++?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "Person p;"
+                    },
+                    {
+                      "id": "2",
+                      "text": "p Person;"
+                    },
+                    {
+                      "id": "3",
+                      "text": "Person::p;"
+                    },
+                    {
+                      "id": "4",
+                      "text": "new Person p;"
+                    }
+                  ],
+                  "correct_answer": "1"
+                },
+                {
+                  "exercise_id": 26,
+                  "title": "Câu hỏi về Phương thức trong Lớp C++",
+                  "question": "Câu lệnh nào dưới đây là cách định nghĩa phương thức trong lớp Person để in ra thông tin của đối tượng?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "void printInfo() { cout << name << age; }"
+                    },
+                    {
+                      "id": "2",
+                      "text": "void printInfo() { cout << name << ' ' << age; }"
+                    },
+                    {
+                      "id": "3",
+                      "text": "void printInfo() { cout << name, age; }"
+                    },
+                    {
+                      "id": "4",
+                      "text": "void printInfo() { name << age << cout; }"
+                    }
+                  ],
+                  "correct_answer": "2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "HTML CSS từ Zero đến Hero",
+      "slug": "html-css",
+      "description": "Trong khóa này chúng ta sẽ cùng nhau xây dựng giao diện 2 trang web là The Band & Shopee.",
+      "image_url": "https://files.fullstack.edu.vn/f8-prod/courses/2.png",
+      "content": [
+        {
+          "module_id": 1,
+          "module_title": "Giới thiệu về HTML",
+          "lessons": [
+            {
+              "lesson_id": 1,
+              "title": "HTML là gì?",
+              "duration": "10 phút",
+              "description": "Tìm hiểu khái niệm cơ bản về HTML.",
+              "exercises": [
+                {
+                  "exercise_id": 1,
+                  "title": "Câu hỏi về HTML",
+                  "question": "HTML là gì?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "Ngôn ngữ lập trình"
+                    },
+                    {
+                      "id": "2",
+                      "text": "Ngôn ngữ đánh dấu siêu văn bản"
+                    },
+                    {
+                      "id": "3",
+                      "text": "Công cụ phát triển web"
+                    },
+                    {
+                      "id": "4",
+                      "text": "Hệ điều hành"
+                    }
+                  ],
+                  "correct_answer": "2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "module_id": 2,
+          "module_title": "Các thẻ HTML cơ bản",
+          "lessons": [
+            {
+              "lesson_id": 2,
+              "title": "Thẻ tiêu đề và đoạn văn",
+              "duration": "20 phút",
+              "description": "Sử dụng các thẻ để tạo tiêu đề và đoạn văn trong HTML.",
+              "exercises": [
+                {
+                  "exercise_id": 2,
+                  "title": "Câu hỏi về thẻ HTML",
+                  "question": "Thẻ nào dùng để tạo tiêu đề trong HTML?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "<header>"
+                    },
+                    {
+                      "id": "2",
+                      "text": "<h1>"
+                    },
+                    {
+                      "id": "3",
+                      "text": "<title>"
+                    },
+                    {
+                      "id": "4",
+                      "text": "<body>"
+                    }
+                  ],
+                  "correct_answer": "2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Cấu trúc dữ liệu và Giải thuật cơ bản",
+      "slug": "cau-truc-du-lieu-giai-thuat",
+      "description": "Khóa học cung cấp kiến thức cơ bản về cấu trúc dữ liệu và giải thuật, từ danh sách liên kết, ngăn xếp, hàng đợi đến các thuật toán sắp xếp và tìm kiếm.",
+      "image_url": "https://gochocit.com/wp-content/uploads/2021/10/cau-truc-du-lieu-va-giai-thuat.jpg",
+      "content": [
+        {
+          "module_id": 1,
+          "module_title": "Cấu trúc dữ liệu và Giải thuật cơ bản",
+          "lessons": [
+            {
+              "lesson_id": 1,
+              "title": "Giới thiệu về Cấu trúc dữ liệu và Giải thuật",
+              "duration": "10 phút",
+              "description": "Cấu trúc dữ liệu là cách tổ chức và lưu trữ dữ liệu để thực hiện các thao tác hiệu quả. Giải thuật là tập hợp các bước để giải quyết một bài toán. \nTrong khóa học này, bạn sẽ học về các cấu trúc dữ liệu cơ bản như mảng, danh sách liên kết, ngăn xếp, hàng đợi và các giải thuật phổ biến như sắp xếp, tìm kiếm. \nTại sao cần học cấu trúc dữ liệu và giải thuật? \n- Tối ưu hóa hiệu suất chương trình. \n- Giải quyết các bài toán lập trình phức tạp. \n- Chuẩn bị cho các kỳ thi lập trình và phỏng vấn kỹ thuật. \nVí dụ: Để tìm kiếm một phần tử trong danh sách, bạn có thể dùng tìm kiếm tuyến tính (O(n)) hoặc tìm kiếm nhị phân (O(log n)) nếu danh sách đã được sắp xếp.",
+              "exercises": [
+                {
+                  "exercise_id": 1,
+                  "title": "Câu hỏi về Cấu trúc dữ liệu",
+                  "question": "Cấu trúc dữ liệu là gì?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "Ngôn ngữ lập trình"
+                    },
+                    {
+                      "id": "2",
+                      "text": "Cách tổ chức và lưu trữ dữ liệu"
+                    },
+                    {
+                      "id": "3",
+                      "text": "Một loại giải thuật"
+                    },
+                    {
+                      "id": "4",
+                      "text": "Phần mềm quản lý cơ sở dữ liệu"
+                    }
+                  ],
+                  "correct_answer": "2"
+                },
+                {
+                  "exercise_id": 2,
+                  "title": "Câu hỏi về Giải thuật",
+                  "question": "Giải thuật là gì?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "Cách tổ chức dữ liệu"
+                    },
+                    {
+                      "id": "2",
+                      "text": "Tập hợp các bước để giải quyết bài toán"
+                    },
+                    {
+                      "id": "3",
+                      "text": "Một ngôn ngữ lập trình"
+                    },
+                    {
+                      "id": "4",
+                      "text": "Cấu trúc phần cứng"
+                    }
+                  ],
+                  "correct_answer": "2"
+                }
+              ]
+            },
+            {
+              "lesson_id": 2,
+              "title": "Danh sách liên kết (Linked List)",
+              "duration": "15 phút",
+              "description": "Danh sách liên kết là một cấu trúc dữ liệu động, bao gồm các nút (node) được liên kết với nhau. Mỗi nút chứa dữ liệu và con trỏ đến nút tiếp theo. \nƯu điểm: \n- Thêm/xóa phần tử dễ dàng. \n- Kích thước linh hoạt. \nNhược điểm: \n- Truy cập ngẫu nhiên chậm (O(n)). \nVí dụ mã C++ cho danh sách liên kết đơn: \n```cpp\n#include <iostream>\nusing namespace std;\n\nstruct Node {\n    int data;\n    Node* next;\n    Node(int val) : data(val), next(nullptr) {}\n};\n\nclass LinkedList {\npublic:\n    Node* head;\n    LinkedList() : head(nullptr) {}\n    void append(int data) {\n        Node* newNode = new Node(data);\n        if (!head) head = newNode;\n        else {\n            Node* temp = head;\n            while (temp->next) temp = temp->next;\n            temp->next = newNode;\n        }\n    }\n    void display() {\n        Node* temp = head;\n        while (temp) {\n            cout << temp->data << \" \";\n            temp = temp->next;\n        }\n        cout << endl;\n    }\n};\n\nint main() {\n    LinkedList list;\n    list.append(1);\n    list.append(2);\n    list.append(3);\n    list.display();\n    return 0;\n}\n```",
+              "exercises": [
+                {
+                  "exercise_id": 3,
+                  "title": "Câu hỏi về Danh sách liên kết",
+                  "question": "Ưu điểm chính của danh sách liên kết so với mảng là gì?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "Truy cập ngẫu nhiên nhanh"
+                    },
+                    {
+                      "id": "2",
+                      "text": "Thêm/xóa phần tử dễ dàng"
+                    },
+                    {
+                      "id": "3",
+                      "text": "Tiết kiệm bộ nhớ"
+                    },
+                    {
+                      "id": "4",
+                      "text": "Hỗ trợ đa luồng"
+                    }
+                  ],
+                  "correct_answer": "2"
+                },
+                {
+                  "exercise_id": 4,
+                  "title": "Viết mã danh sách liên kết",
+                  "question": "Viết chương trình C++ tạo một danh sách liên kết đơn với 3 phần tử (4, 5, 6) và in ra các phần tử.",
+                  "type": "code",
+                  "starter_code": "#include <iostream>\nusing namespace std;\n\nstruct Node {\n    int data;\n    Node* next;\n    Node(int val) : data(val), next(nullptr) {}\n};\n\nclass LinkedList {\npublic:\n    Node* head;\n    LinkedList() : head(nullptr) {}\n    void append(int data) {\n        // TODO: Thêm phần tử vào cuối danh sách\n    }\n    void display() {\n        // TODO: In các phần tử\n    }\n};\n\nint main() {\n    LinkedList list;\n    // TODO: Thêm 3 phần tử 4, 5, 6 và in ra\n    return 0;\n}",
+                  "expected_output": "4 5 6\n"
+                }
+              ]
+            },
+            {
+              "lesson_id": 3,
+              "title": "Ngăn xếp (Stack)",
+              "duration": "15 phút",
+              "description": "Ngăn xếp là một cấu trúc dữ liệu hoạt động theo nguyên tắc LIFO (Last In, First Out). \nCác thao tác chính: \n- Push: Thêm phần tử vào đỉnh ngăn xếp. \n- Pop: Xóa phần tử từ đỉnh ngăn xếp. \n- Top: Lấy phần tử ở đỉnh ngăn xếp. \nVí dụ mã C++ cho ngăn xếp: \n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Stack {\nprivate:\n    static const int MAX = 100;\n    int arr[MAX];\n    int top;\npublic:\n    Stack() : top(-1) {}\n    void push(int x) {\n        if (top >= MAX - 1) cout << \"Stack Overflow\\n\";\n        else arr[++top] = x;\n    }\n    int pop() {\n        if (top < 0) {\n            cout << \"Stack Underflow\\n\";\n            return -1;\n        }\n        return arr[top--];\n    }\n    int peek() {\n        if (top < 0) return -1;\n        return arr[top];\n    }\n};\n\nint main() {\n    Stack s;\n    s.push(1);\n    s.push(2);\n    cout << s.pop() << endl;\n    cout << s.peek() << endl;\n    return 0;\n}\n```",
+              "exercises": [
+                {
+                  "exercise_id": 5,
+                  "title": "Câu hỏi về Ngăn xếp",
+                  "question": "Ngăn xếp hoạt động theo nguyên tắc nào?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "FIFO (First In, First Out)"
+                    },
+                    {
+                      "id": "2",
+                      "text": "LIFO (Last In, First Out)"
+                    },
+                    {
+                      "id": "3",
+                      "text": "Sắp xếp theo thứ tự"
+                    },
+                    {
+                      "id": "4",
+                      "text": "Truy cập ngẫu nhiên"
+                    }
+                  ],
+                  "correct_answer": "2"
+                },
+                {
+                  "exercise_id": 6,
+                  "title": "Viết mã ngăn xếp",
+                  "question": "Viết chương trình C++ triển khai ngăn xếp với các thao tác push(3), push(4), pop() và in ra phần tử được pop.",
+                  "type": "code",
+                  "starter_code": "#include <iostream>\nusing namespace std;\n\nclass Stack {\nprivate:\n    static const int MAX = 100;\n    int arr[MAX];\n    int top;\npublic:\n    Stack() : top(-1) {}\n    void push(int x) {\n        // TODO: Thêm phần tử\n    }\n    int pop() {\n        // TODO: Xóa và trả về phần tử\n    }\n};\n\nint main() {\n    Stack s;\n    // TODO: Thêm 3, 4, xóa và in phần tử\n    return 0;\n}",
+                  "expected_output": "4\n"
+                }
+              ]
+            },
+            {
+              "lesson_id": 4,
+              "title": "Hàng đợi (Queue)",
+              "duration": "15 phút",
+              "description": "Hàng đợi là một cấu trúc dữ liệu hoạt động theo nguyên tắc FIFO (First In, First Out). \nCác thao tác chính: \n- Enqueue: Thêm phần tử vào cuối hàng đợi. \n- Dequeue: Xóa phần tử từ đầu hàng đợi. \n- Front: Lấy phần tử ở đầu hàng đợi. \nVí dụ mã C++ cho hàng đợi: \n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Queue {\nprivate:\n    static const int MAX = 100;\n    int arr[MAX];\n    int front, rear;\npublic:\n    Queue() : front(0), rear(-1) {}\n    void enqueue(int x) {\n        if (rear >= MAX - 1) cout << \"Queue Overflow\\n\";\n        else arr[++rear] = x;\n    }\n    int dequeue() {\n        if (front > rear) {\n            cout << \"Queue Underflow\\n\";\n            return -1;\n        }\n        return arr[front++];\n    }\n    int peek() {\n        if (front > rear) return -1;\n        return arr[front];\n    }\n};\n\nint main() {\n    Queue q;\n    q.enqueue(1);\n    q.enqueue(2);\n    cout << q.dequeue() << endl;\n    cout << q.peek() << endl;\n    return 0;\n}\n```",
+              "exercises": [
+                {
+                  "exercise_id": 7,
+                  "title": "Câu hỏi về Hàng đợi",
+                  "question": "Hàng đợi hoạt động theo nguyên tắc nào?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "LIFO (Last In, First Out)"
+                    },
+                    {
+                      "id": "2",
+                      "text": "FIFO (First In, First Out)"
+                    },
+                    {
+                      "id": "3",
+                      "text": "Sắp xếp theo thứ tự"
+                    },
+                    {
+                      "id": "4",
+                      "text": "Truy cập ngẫu nhiên"
+                    }
+                  ],
+                  "correct_answer": "2"
+                },
+                {
+                  "exercise_id": 8,
+                  "title": "Viết mã hàng đợi",
+                  "question": "Viết chương trình C++ triển khai hàng đợi với các thao tác enqueue(5), enqueue(6), dequeue() và in ra phần tử được dequeue.",
+                  "type": "code",
+                  "starter_code": "#include <iostream>\nusing namespace std;\n\nclass Queue {\nprivate:\n    static const int MAX = 100;\n    int arr[MAX];\n    int front, rear;\npublic:\n    Queue() : front(0), rear(-1) {}\n    void enqueue(int x) {\n        // TODO: Thêm phần tử\n    }\n    int dequeue() {\n        // TODO: Xóa và trả về phần tử\n    }\n};\n\nint main() {\n    Queue q;\n    // TODO: Thêm 5, 6, xóa và in phần tử\n    return 0;\n}",
+                  "expected_output": "5\n"
+                }
+              ]
+            },
+            {
+              "lesson_id": 5,
+              "title": "Thuật toán sắp xếp cơ bản",
+              "duration": "20 phút",
+              "description": "Sắp xếp là quá trình sắp xếp các phần tử trong danh sách theo thứ tự tăng dần hoặc giảm dần. \nCác thuật toán sắp xếp cơ bản: \n- Bubble Sort: So sánh và hoán đổi các cặp phần tử liên tiếp (O(n^2)). \n- Selection Sort: Tìm phần tử nhỏ nhất và đưa lên đầu (O(n^2)). \nVí dụ mã C++ cho Bubble Sort: \n```cpp\n#include <iostream>\nusing namespace std;\n\nvoid bubbleSort(int arr[], int n) {\n    for (int i = 0; i < n - 1; i++)\n        for (int j = 0; j < n - i - 1; j++)\n            if (arr[j] > arr[j + 1]) {\n                int temp = arr[j];\n                arr[j] = arr[j + 1];\n                arr[j + 1] = temp;\n            }\n}\n\nint main() {\n    int arr[] = {64, 34, 25, 12, 22};\n    int n = 5;\n    bubbleSort(arr, n);\n    for (int i = 0; i < n; i++)\n        cout << arr[i] << \" \";\n    cout << endl;\n    return 0;\n}\n```",
+              "exercises": [
+                {
+                  "exercise_id": 9,
+                  "title": "Câu hỏi về Sắp xếp",
+                  "question": "Độ phức tạp thời gian của thuật toán Bubble Sort là gì?",
+                  "options": [
+                    {
+                      "id": "1",
+                      "text": "O(n)"
+                    },
+                    {
+                      "id": "2",
+                      "text": "O(n^2)"
+                    },
+                    {
+                      "id": "3",
+                      "text": "O(log n)"
+                    },
+                    {
+                      "id": "4",
+                      "text": "O(n log n)"
+                    }
+                  ],
+                  "correct_answer": "2"
+                },
+                {
+                  "exercise_id": 10,
+                  "title": "Viết mã Bubble Sort",
+                  "question": "Viết chương trình C++ triển khai thuật toán Bubble Sort để sắp xếp mảng {5, 3, 8, 1, 2} theo thứ tự tăng dần và in ra mảng đã sắp xếp.",
+                  "type": "code",
+                  "starter_code": "#include <iostream>\nusing namespace std;\n\nvoid bubbleSort(int arr[], int n) {\n    // TODO: Triển khai Bubble Sort\n}\n\nint main() {\n    int arr[] = {5, 3, 8, 1, 2};\n    int n = 5;\n    // TODO: Gọi bubbleSort và in mảng\n    return 0;\n}",
+                  "expected_output": "1 2 3 5 8\n"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
